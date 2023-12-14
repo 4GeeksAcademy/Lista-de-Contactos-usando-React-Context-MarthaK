@@ -1,0 +1,80 @@
+/* contacts.css */
+
+.custom-edit-btn {
+    /* Estilos específicos para el botón de editar */
+    /* Por ejemplo: */
+    background-color: deeppink  ;
+    color: white;
+    border: none;
+    /* Otros estilos */
+}
+
+.custom-delete-btn {
+    /* Estilos específicos para el botón de eliminar */
+    /* Por ejemplo: */
+    background-color: lightblue;
+    color: black;
+    border: none;
+    /* Otros estilos */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .list-group-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .content {
+        order: 1; /* Cambia el orden del contenido */
+    }
+
+    .btns-container {
+        order: 2; /* Cambia el orden de los botones */
+        margin-top: 10px; /* Añade un margen entre el contenido y los botones */
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-details p {
+    margin: 15px 0;
+}
+
+.button-container {
+    display: flex;   
+    margin-top: 20px; /* Ajusta el margen superior según tu diseño */
+}
+
+.button-container button:first-child {
+    margin-right: 20px; /* Ajusta el espacio entre el primer botón y el segundo */
+}
+
+.list-group-item img {
+    box-shadow: 0 0 5px deeppink; /* Cambia los valores según lo desees */
+}
+
+.list-group-item img {
+    border: 2px solid transparent; /* Añade un borde transparente */
+    transition: border-color 0.3s ease; /* Agrega una transición al cambio de color del borde */
+}
+
+.list-group-item img:hover {
+    border-color: lightblue; /* Cambia el color del borde al pasar el ratón por encima */
+}
+
+.custom-edit-btn {
+    /* Estilos normales del botón */
+    font-size: 16px;
+    /* Agrega cualquier otro estilo que desees */
+
+    /* Estilos para dispositivos pequeños */
+    @media (max-width: 576px) {
+        font-size: 14px;
+        /* Ajusta los estilos para dispositivos pequeños */
+    }
+}

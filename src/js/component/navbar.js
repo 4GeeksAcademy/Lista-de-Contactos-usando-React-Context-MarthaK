@@ -2,14 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
+	const navbarStyle = {
+		backgroundColor: 'lightblue',
+	};
+
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
-			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-			</Link>
-			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
+		<nav className="navbar navbar-light mb-3" style={navbarStyle}>
+			<div className="container d-flex justify-content-center">
+				<Link to="/createContact">
+					<button className="custom-edit-btn">Add New Contact</button>
 				</Link>
 			</div>
 		</nav>
